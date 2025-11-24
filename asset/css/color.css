@@ -18,17 +18,17 @@
 }
 
 .card-hover {
-    transition: transform .18s ease, box-shadow .18s ease;
-    cursor: pointer;
-    will-change: transform, box-shadow;
+  cursor: pointer !important;
+  transition: transform 0.3s ease, box-shadow 0.3s ease !important;
 }
 
 .card-hover:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 10px 24px rgba(0,0,0,0.16);
+  transform: translateY(-10px) !important;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4) !important;
 }
 
-/* .navbar .card-hover:hover,
-.card.card-hover:hover {
-    transform: translateY(-6px);
-} */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 10;
+    width: 5%;
+}

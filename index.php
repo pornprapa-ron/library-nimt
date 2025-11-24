@@ -7,7 +7,9 @@
     <title>NIMT Library</title>
     <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="vendor/swiper/a11y.min.css">
     <link rel="stylesheet" href="asset/css/color.css">
+
 </head>
 
 <body>
@@ -77,62 +79,75 @@
         <p>Find books in your favorite genres</p>
         <div class="row row-cols-1 row-cols-md-6 g-4 mt-3 ">
             <div class="col">
-                <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3 " style="height: 9rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-clipboard-check"></i></h5>
-                        <p class="card-text">Standards & Regulatory Documents</p>
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3 " style="height: 9rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-clipboard-check"></i></h5>
+                            <p class="card-text">Standards & Regulatory Documents</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-book-open"></i></h5>
-                        <p class="card-text">Research & Publications</p>
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-book-open"></i></h5>
+                            <p class="card-text">Research & Publications</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-scale-balanced"></i></h5>
-                        <p class="card-text">Laws, Policy & International Cooperation</p>
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-scale-balanced"></i></h5>
+                            <p class="card-text">Laws, Policy & International Cooperation</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-microscope"></i></h5>
-                        <p class="card-text">Science & Technology</p>
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-microscope"></i></h5>
+                            <p class="card-text">Science & Technology</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-chart-line"></i></h5>
-                        <p class="card-text">Business & Management</p>
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-solid fa-chart-line"></i></h5>
+                            <p class="card-text">Business & Management</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="col">
-                <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
-                    <div class="card-body">
-                        <h5 class="card-title"><i class="fa-solid fa-book-open"></i></h5>
-                        <p class="card-text">Periodicals / Journals</p>
+                <a href="#" class="text-decoration-none">
+                    <div class="card card-hover bg-indigo bg-indigo-gradient text-light mb-3" style="height: 9rem;">
+                        <div class="card-body">
+                            <h5 class="card-title"><i class="fa-regular fa-newspaper"></i></h5>
+                            <p class="card-text">Periodicals / Journals</p>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
         </div>
+    </div>
 
 
-
-        <script>
-            document.getElementById("contactBtn").addEventListener("click", function(e) {
-                e.preventDefault(); // กันการกระโดดไปหน้าอื่น
-                Swal.fire({
-                    html: `
+    
+    <script>
+        document.getElementById("contactBtn").addEventListener("click", function(e) {
+            e.preventDefault(); // กันการกระโดดไปหน้าอื่น
+            Swal.fire({
+                html: `
                         <div class="text-center">
                             <h1 style="margin:0; font-size:22px; font-weight:bold;">Opening Hours</h1>
                             <br>
@@ -145,17 +160,19 @@
                             <p>📍 Address: สำนักงานกลาง ชั้น 3</p>
                         </div>
                     `,
-                    draggable: true
-                });
+                draggable: true
             });
-        </script>
+        });
+    </script>
 
 
 
 
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/sweetalert/sweetalert2.all.min.js"></script>
-        <script src="vendor/fontawesome/js/fontawesome.min.js"></script>
+
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/sweetalert/sweetalert2.all.min.js"></script>
+    <script src="vendor/fontawesome/js/fontawesome.min.js"></script>
+    <script src="vendor/swiper/swiper-bundle.min.js"></script>
 
 
 
